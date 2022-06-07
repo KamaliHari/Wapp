@@ -97,7 +97,7 @@ router.get('/dashbd', function(req, res, next) {
   res.render('dashboard', { title: 'Home' });
 });
 router.get('/signup', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('Signup', { title: 'Home' });
 });
 router.get('/paymnt', function(req, res, next) {
   res.render('Payment', { title: 'Home' });
@@ -109,7 +109,7 @@ router.get('/payTax', function(req, res, next) {
   res.render('PayTax', { title: 'Home' });
 });
 router.get('/qrc', function(req, res, next) {
-  res.render('/qrcode', { title: 'Home' });
+  res.render('qrcode', { title: 'Home' });
 });
 router.get('/RecDTH', function(req, res, next) {
   res.render('RechargeDTH', { title: 'Home' });
