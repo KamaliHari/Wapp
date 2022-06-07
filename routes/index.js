@@ -22,6 +22,7 @@ router.use(session({
 	resave: true,
 	saveUninitialized: true
 }));
+//login auth
 router.use(express.json());
 router.use(express.urlencoded({ extended: true }));
 router.use(express.static(path.join(__dirname, 'static')));
@@ -84,7 +85,7 @@ router.post('/register', function(req, res, next) {
 
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('login', { title: 'Home' });
 });
 router.get('/addwalletpts', function(req, res, next) {
   res.render('Add wallet points', { title: 'Home' });
@@ -92,37 +93,37 @@ router.get('/addwalletpts', function(req, res, next) {
 router.get('/CheckWalletBal', function(req, res, next) {
   res.render('Check Wallet Balance', { title: 'Home' });
 });
-router.get('/dashboard', function(req, res, next) {
+router.get('/dashbd', function(req, res, next) {
   res.render('dashboard', { title: 'Home' });
 });
-router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Home' });
+router.get('/signup', function(req, res, next) {
+  res.render('index', { title: 'Home' });
 });
-router.get('/Payment', function(req, res, next) {
+router.get('/paymnt', function(req, res, next) {
   res.render('Payment', { title: 'Home' });
 });
-router.get('/payoptions', function(req, res, next) {
+router.get('/payopts', function(req, res, next) {
   res.render('payoptions', { title: 'Home' });
 });
-router.get('/PayTax', function(req, res, next) {
+router.get('/payTax', function(req, res, next) {
   res.render('PayTax', { title: 'Home' });
 });
-router.get('/qrcode', function(req, res, next) {
+router.get('/qrc', function(req, res, next) {
   res.render('/qrcode', { title: 'Home' });
 });
-router.get('/RechargeDTH', function(req, res, next) {
+router.get('/RecDTH', function(req, res, next) {
   res.render('RechargeDTH', { title: 'Home' });
 });
-router.get('/RechargeMob', function(req, res, next) {
+router.get('/RecMob', function(req, res, next) {
   res.render('RechargeMob', { title: 'Home' });
 });
 router.get('/Transactionlist', function(req, res, next) {
   res.render('Transaction List', { title: 'Home' });
 });
-router.get('/UtilBill', function(req, res, next) {
+router.get('/UtiliBill', function(req, res, next) {
   res.render('UtilBill', { title: 'Home' });
 });
-router.get('/wallet', function(req, res, next) {
+router.get('/SFwallet', function(req, res, next) {
   res.render('wallet', { title: 'Home' });
 });
 
