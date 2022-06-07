@@ -19,8 +19,9 @@ h1{
       }
       hr.solid2 {
         align-items: center;
-        margin-left:250px;
+        margin-left:auto;
         margin-top:10px;
+        margin-right: auto;
         margin-bottom:30px;
         width:30%;
         border-top: 1.5px solid #000000;
